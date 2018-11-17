@@ -13,9 +13,9 @@ fields:
   name: date
   config:
     display_utc: false
-- type: image_gallery
-  name: gallery_
-  label: 'Gallery '
+- type: textarea
+  name: description
+  label: Description
 - type: image_gallery
   name: gallery_images
   label: Gallery Images
