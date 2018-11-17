@@ -18,7 +18,7 @@ body {
   font-size: 1.6em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Haas Grot Text', 'Helvetica', 'Arial', sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Haas Grot Display', 'Helvetica', 'Arial', sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -74,26 +74,3 @@ a:hover {
     line-height: 1.5;
   }
 }
-
-@font-face {
-  font-family: 'Haas Grot Text';
-  src: url('../assets/fonts/NeueHaasGrotText-55Roman-Web.eot');
-  src: url('../assets/fonts/NeueHaasGrotText-55Roman-Web.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/NeueHaasGrotText-55Roman-Web.woff') format('woff2'),
-       url('../assets/fonts/NeueHaasGrotText-55Roman-Web.woff2') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'Haas Grot Display';
-  src: url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.eot');
-  src: url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.woff') format('woff2'),
-       url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.woff2') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-}
-

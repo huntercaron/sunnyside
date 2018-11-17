@@ -1,14 +1,37 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
-const IndexPage = () => (
+const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }}}) => (
   <Layout>
-    <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    
+    {posts.map(({ node: post }) => 
+      <div>
+        <Link to={post.fields.slug}>{post.frontmatter.title} &rarr;</Link>
+      </div>
+    )}
+
   </Layout>
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query IndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
