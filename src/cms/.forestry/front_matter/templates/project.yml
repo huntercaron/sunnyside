@@ -2,9 +2,6 @@
 label: Project
 hide_body: true
 is_partial: false
-draft: false
-drafts: false
-
 fields:
 - type: text
   name: title
@@ -24,5 +21,4 @@ fields:
   name: gallery_images
   label: Gallery Images
 pages:
-- src/content/projects/fahsion.md
 - src/content/projects/new-fashion.md
