@@ -1,0 +1,15 @@
+---
+label: Project
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: datetime
+  label: Date
+  name: date
+  config:
+    display_utc: false
