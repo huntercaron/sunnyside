@@ -2,6 +2,9 @@
 label: Project
 hide_body: true
 is_partial: false
+draft: false
+drafts: false
+
 fields:
 - type: text
   name: title
