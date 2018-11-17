@@ -1,6 +1,6 @@
 ---
 label: Project
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: text
@@ -13,5 +13,11 @@ fields:
   name: date
   config:
     display_utc: false
+- type: image_gallery
+  name: gallery_
+  label: 'Gallery '
+- type: image_gallery
+  name: gallery_images
+  label: Gallery Images
 pages:
 - src/content/projects/fahsion.md
