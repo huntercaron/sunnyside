@@ -9,7 +9,7 @@ sections:
   label: Projects
   create: all
   match: "*"
-upload_dir: static/assets
+upload_dir: src/content/assets
 public_path: ''
 front_matter_path: ''
 use_front_matter_path: false
