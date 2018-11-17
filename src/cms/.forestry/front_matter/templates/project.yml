@@ -21,5 +21,5 @@ fields:
   name: gallery_images
   label: Gallery Images
 pages:
-- src/content/projects/new-fashion.md
 - src/content/projects/fahsion.md
+- src/content/projects/new-fashion.md
