@@ -8,6 +8,11 @@ fields:
   label: Title
   config:
     required: true
+- type: datetime
+  label: Date
+  name: date
+  config:
+    display_utc: false
 - type: textarea
   name: description
   label: Description

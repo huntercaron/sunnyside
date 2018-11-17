@@ -1,8 +1,7 @@
 ---
 title: Fashion
-date: 2018-11-17 03:33:06 +0000
-
+date: 2018-11-17 03:47:57 +0000
 ---
 haha this is ALL about fashion assholes
 
-![](/ruizwar1.jpg)maybe there is more info here? idk
+![](/media/ruizwar1.jpg)maybe there is more info here? idk
