@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  /* Maybe Try?  font-size: calc(1.25vw + 62.5%); */
+  /* font-size: calc(0.30vw + 42.5%); */
+  font-size: 62.5%;
+  height: 100% !important;
+}
+
+body {
+  margin: 0;
+  height: 100% !important;
+  overflow-x: hidden;
+  font-size: 1.6em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Haas Grot Text', 'Helvetica', 'Arial', sans-serif;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Haas Grot Display', 'Helvetica', 'Arial', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  p {
+    font-size: calc(0.5vw + 1.3rem);
+    line-height: 1.5;
+  }
+}
+
+@font-face {
+  font-family: 'Haas Grot Text';
+  src: url('../assets/fonts/NeueHaasGrotText-55Roman-Web.eot');
+  src: url('../assets/fonts/NeueHaasGrotText-55Roman-Web.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/NeueHaasGrotText-55Roman-Web.woff') format('woff2'),
+       url('../assets/fonts/NeueHaasGrotText-55Roman-Web.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Haas Grot Display';
+  src: url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.eot');
+  src: url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.woff') format('woff2'),
+       url('../assets/fonts/NeueHaasGrotDisp-55Roman-Web.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
