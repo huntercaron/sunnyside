@@ -13,7 +13,7 @@ fields:
   name: date
   config:
     display_utc: false
-    required: false
+    required: true
 - type: textarea
   name: description
   label: Description
