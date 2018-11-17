@@ -13,3 +13,5 @@ fields:
   name: date
   config:
     display_utc: false
+pages:
+- src/content/projects/fahsion.md
