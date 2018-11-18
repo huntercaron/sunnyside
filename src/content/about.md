@@ -6,8 +6,9 @@ libraries:
 - GraphQL
 - Gatsby
 - React
-social: []
+social:
+- name: Twitter
+  link: https://twitter.com/huntercaron
 color: "#70FFE4"
-draft: true
 
 ---
