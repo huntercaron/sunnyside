@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: src/content/about
+  label: About
 - type: directory
   path: src/content/posts
   label: Blog
