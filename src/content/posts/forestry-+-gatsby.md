@@ -1,7 +1,6 @@
 ---
 title: Forestry + Gatsby
 date: 2018-11-17 01:49:22 +0000
-draft: true
 
 ---
 This site is built with Forestry + Gatsby. 
