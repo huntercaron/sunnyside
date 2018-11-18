@@ -20,6 +20,7 @@ sections:
   create: documents
   match: "*"
   templates:
+  - about
   - project
 upload_dir: static/assets/media
 public_path: "/media"
