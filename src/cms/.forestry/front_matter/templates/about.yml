@@ -12,14 +12,14 @@ fields:
     use_select: false
     source:
       type: documents
-- type: list
-  name: social
-  label: Social
 - type: color
   name: color
   config:
     color_format: Hex
     required: true
   label: Color
+- type: field_group_list
+  name: social
+  label: Social
 pages:
 - src/content/about.md
