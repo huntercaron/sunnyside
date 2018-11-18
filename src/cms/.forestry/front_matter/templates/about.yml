@@ -21,3 +21,5 @@ fields:
     color_format: Hex
     required: true
   label: Color
+pages:
+- src/content/about.md
