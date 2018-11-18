@@ -21,4 +21,5 @@ fields:
   name: gallery_images
   label: Gallery Images
 pages:
+- src/content/projects/forests.md
 - src/content/projects/eggs.md
