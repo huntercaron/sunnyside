@@ -16,6 +16,8 @@ sections:
   label: Projects
   create: documents
   match: "*"
+  templates:
+  - project
 upload_dir: src/static/assets/media
 public_path: "/images"
 front_matter_path: ''
