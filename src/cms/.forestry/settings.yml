@@ -7,14 +7,14 @@ sections:
 - type: directory
   path: src/content/posts
   label: Pages
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - post
 - type: directory
   path: src/content/projects
   label: Projects
-  create: all
+  create: documents
   match: "*"
 upload_dir: src/static/assets/media
 public_path: "/images"
