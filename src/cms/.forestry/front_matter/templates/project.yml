@@ -20,3 +20,5 @@ fields:
 - type: image_gallery
   name: gallery_images
   label: Gallery Images
+pages:
+- src/content/projects/eggs.md
