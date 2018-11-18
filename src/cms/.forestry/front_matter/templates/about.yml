@@ -12,6 +12,9 @@ fields:
     use_select: false
     source:
       type: documents
+- type: list
+  name: social
+  label: Social
 - type: color
   name: color
   config:
