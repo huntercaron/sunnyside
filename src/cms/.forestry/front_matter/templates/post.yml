@@ -2,7 +2,6 @@
 label: Post
 hide_body: false
 is_partial: false
-template: post
 fields:
 - type: text
   name: title
