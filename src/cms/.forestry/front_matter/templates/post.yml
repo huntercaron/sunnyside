@@ -12,4 +12,5 @@ fields:
   name: date
   label: Date
 pages:
+- src/content/posts/forestry-+-gatsby.md
 - src/content/posts/hello-blog.md
