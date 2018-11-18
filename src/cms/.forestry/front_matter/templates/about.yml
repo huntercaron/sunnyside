@@ -12,3 +12,9 @@ fields:
     use_select: false
     source:
       type: documents
+- type: color
+  name: color
+  config:
+    color_format: Hex
+    required: true
+  label: Color
