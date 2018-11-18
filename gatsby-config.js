@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Boiled',
+    title: 'Boiled + Forestry',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -49,7 +49,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#000000',
         display: 'minimal-ui',
-        icon: 'src/assets/images/other-sloth.jpg', // This path is relative to the root of the site.
+        icon: 'static/assets/media/other-sloth.jpg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

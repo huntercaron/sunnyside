@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
-  <h2>
+  <h1>
     <Link to="/">{siteTitle}</Link>
-  </h2>
+  </h1>
 )
 
 export default Header
