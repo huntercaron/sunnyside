@@ -7,6 +7,8 @@ libraries:
 - Gatsby
 - React
 social:
+- name: Instagram
+  link: https://www.instagram.com/hunterhcaron/
 - name: Twitter
   link: https://twitter.com/huntercaron
 color: "#70FFE4"
