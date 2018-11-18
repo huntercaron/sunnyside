@@ -5,9 +5,7 @@
 }
 
 html {
-  /* Maybe Try?  font-size: calc(1.25vw + 62.5%); */
-  /* font-size: calc(0.30vw + 42.5%); */
-  font-size: 62.5%;
+  font-size: calc(0.20vw + 42.5%);
   height: 100% !important;
 }
 
@@ -53,7 +51,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 a:hover {
