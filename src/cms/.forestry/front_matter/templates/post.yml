@@ -11,3 +11,5 @@ fields:
 - type: datetime
   name: date
   label: Date
+pages:
+- src/content/posts/hello-blog.md
