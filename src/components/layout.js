@@ -6,7 +6,7 @@ import 'modern-normalize/modern-normalize.css'
 import './layout.css'
 import Header from './header'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pageTitle }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,8 +26,9 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
+        
 
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle}/>
 
         <div>
           {children}

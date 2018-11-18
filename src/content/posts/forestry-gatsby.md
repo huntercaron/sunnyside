@@ -1,5 +1,5 @@
 ---
-title: Forestry + Gatsby
+title: Forestry and Gatsby
 date: 2018-11-17 01:49:22 +0000
 
 ---

@@ -13,14 +13,16 @@ class BlogPostTemplate extends React.Component {
     // const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} pageTitle={post.frontmatter.title}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div 
+          dangerouslySetInnerHTML={{ __html: post.html }} 
+          style={{fontSize: "2rem", marginLeft: "3rem", maxWidth: "700px"}}
+        />
         
       </Layout>
     )
