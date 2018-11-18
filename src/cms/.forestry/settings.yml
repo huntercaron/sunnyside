@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
 - type: document
-  path: src/content/about
+  path: src/content/about.md
   label: About
 - type: directory
   path: src/content/posts
