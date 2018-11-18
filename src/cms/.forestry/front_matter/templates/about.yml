@@ -32,5 +32,3 @@ fields:
     label: Link
     config:
       required: true
-pages:
-- src/content/about.md
