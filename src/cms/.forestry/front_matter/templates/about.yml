@@ -21,5 +21,16 @@ fields:
 - type: field_group_list
   name: social
   label: Social
+  fields:
+  - type: text
+    name: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: link
+    label: Link
+    config:
+      required: true
 pages:
 - src/content/about.md
