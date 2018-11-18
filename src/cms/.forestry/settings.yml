@@ -21,8 +21,8 @@ sections:
   match: "*"
   templates:
   - project
-upload_dir: src/static/assets/media
-public_path: "/images"
+upload_dir: static/assets/media
+public_path: "/media"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
