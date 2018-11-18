@@ -5,7 +5,7 @@ Basic setup of [Gatsby](https://www.gatsbyjs.org/) with [Forestry](https://fores
 
 To get your own version, click the button below.
 
-[![Import to Forestry](https://app.netlify.com/start/deploy?repository=https://github.com/huntercaron/boiled-forestry)]
+[![Import this project into Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=huntercaron/boiled-forestry&engine=hugo&version=0.49)
 
 <!-- [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/huntercaron/boiled-forestry) -->
 

@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
         />
         <div 
           dangerouslySetInnerHTML={{ __html: post.html }} 
-          style={{fontSize: "2rem", margin: "0 3rem", maxWidth: "600px"}}
+          style={{fontSize: "2rem", margin: "0 3rem", maxWidth: "700px"}}
         />
         
       </Layout>
