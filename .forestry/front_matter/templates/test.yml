@@ -16,3 +16,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- src/content/projects/test.md
