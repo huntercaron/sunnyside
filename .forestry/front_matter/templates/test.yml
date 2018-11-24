@@ -1,0 +1,18 @@
+---
+label: Test
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: boolean
+  name: toggle
+  label: toggle
+- type: textarea
+  name: text
+  label: Text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
