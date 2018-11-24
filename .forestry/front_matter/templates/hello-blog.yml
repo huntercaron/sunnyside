@@ -1,7 +1,7 @@
 ---
-label: Hello Blog
-hide_body: 
-is_partial: 
+label: Post
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
