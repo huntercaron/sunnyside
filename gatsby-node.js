@@ -9,7 +9,9 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve('./src/templates/blog-post.js')
+    const postTemplate = path.resolve('./src/templates/post.js')
+    const projectTemplate = path.resolve('./src/templates/project.js')
+
     resolve(
       graphql(
         `
@@ -44,7 +46,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: post.node.fields.slug,
-            component: postTemplate,
+            component: path.resolve(`./src/templates/${post.node.frontmatter.template}.js`),
             context: {
               slug: post.node.fields.slug,
               previous,
