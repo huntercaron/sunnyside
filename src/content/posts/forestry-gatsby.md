@@ -1,5 +1,6 @@
 ---
 title: Forestry and Gatsby
+template: post
 date: 2018-11-17 01:49:22 +0000
 
 ---
