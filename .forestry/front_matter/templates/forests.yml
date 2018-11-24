@@ -8,6 +8,11 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: project
 - name: date
   label: Date
   type: datetime
