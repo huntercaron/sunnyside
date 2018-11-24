@@ -1,0 +1,25 @@
+---
+label: Forests
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: gallery_images
+  label: Gallery images
+  type: image_gallery
+  hidden: false
+  default: ''
