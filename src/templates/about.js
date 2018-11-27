@@ -9,7 +9,6 @@ class AboutTemplate extends React.Component {
   render() {
     const about = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    // const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} pageTitle={about.frontmatter.title}>
@@ -18,11 +17,33 @@ class AboutTemplate extends React.Component {
           title={`${about.frontmatter.title} | ${siteTitle}`}
         />
 
-        <h1>TEST</h1>
-        
-        <div
-          style={{ width: "100px", height: "100px", background: about.frontmatter.color }}
-        />
+        <div style={{margin: "0 3rem", maxWidth: "700px"}}>
+          <p>{about.frontmatter.description}</p>
+
+          <h4>A list field</h4>
+          <ul>
+            {about.frontmatter.social.map(link => 
+              <li>
+                <a href={link.link}>{link.name}</a>
+              </li>
+            )}
+          </ul>
+
+          <h4>Social List Field</h4>
+          <ul>
+            {about.frontmatter.social.map(link => 
+              <li>
+                <a href={link.link}>{link.name}</a>
+              </li>
+            )}
+          </ul>
+
+
+          <h4>Color Field</h4>
+          <div
+            style={{ width: "100px", height: "100px", background: about.frontmatter.color }}
+          />
+        </div>
       </Layout>
     )
   }
@@ -39,10 +60,9 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt
-      html
       frontmatter {
         title
+        description
         color
         libraries
         social {
