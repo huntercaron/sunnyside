@@ -29,12 +29,10 @@ class AboutTemplate extends React.Component {
             )}
           </ul>
 
-          <h4>Social List Field</h4>
+          <h4>Another list field</h4>
           <ul>
-            {about.frontmatter.social.map(link => 
-              <li>
-                <a href={link.link}>{link.name}</a>
-              </li>
+            {about.frontmatter.libraries.map(lib => 
+              <li>{lib}</li>
             )}
           </ul>
 
