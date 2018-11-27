@@ -20,7 +20,7 @@ class AboutTemplate extends React.Component {
         <div style={{margin: "0 3rem", maxWidth: "700px"}}>
           <p>{about.frontmatter.description}</p>
 
-          <h4>A list field</h4>
+          <h4>A list field: Social</h4>
           <ul>
             {about.frontmatter.social.map(link => 
               <li>
@@ -29,7 +29,7 @@ class AboutTemplate extends React.Component {
             )}
           </ul>
 
-          <h4>Another list field</h4>
+          <h4>Another list field: Libraries</h4>
           <ul>
             {about.frontmatter.libraries.map(lib => 
               <li>{lib}</li>
