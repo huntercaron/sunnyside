@@ -13,11 +13,6 @@ fields:
   type: text
   hidden: true
   default: about
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
 - type: color
   name: color
   config:
