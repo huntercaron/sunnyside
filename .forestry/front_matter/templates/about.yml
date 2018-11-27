@@ -18,6 +18,13 @@ fields:
   type: datetime
   hidden: false
   default: ''
+- type: color
+  name: color
+  config:
+    color_format: Hex
+    required: true
+  label: Color
+  default: "#50E3C2"
 - name: description
   label: Description
   type: text
@@ -44,10 +51,3 @@ fields:
     default: ''
   hidden: false
   default: ''
-- type: color
-  name: color
-  config:
-    color_format: Hex
-    required: true
-  label: Color
-  default: "#50E3C2"
