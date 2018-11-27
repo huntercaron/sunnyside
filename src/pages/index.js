@@ -11,7 +11,7 @@ const SectionTitle = ({ title }) => (
 
 const IndexPage = ({ data: { projects: { edges: projects }, blog: { edges: posts }}}) => (
   <Layout>
-    <h1 style={{maxWidth: "500px"}}>A Gatsby boilerplate using Forestry as a headless CMS.</h1>
+    <h1 style={{maxWidth: "500px"}}>A <a href="https://www.gatsbyjs.org/">Gatsby</a> boilerplate using <a href="https://forestry.io/">Forestry</a> as a headless CMS.</h1>
     
     <SectionTitle title="Projects"/>
     {projects.map(({ node: project }) => 
