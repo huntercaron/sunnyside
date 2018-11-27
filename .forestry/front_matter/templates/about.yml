@@ -50,3 +50,4 @@ fields:
     color_format: Hex
     required: true
   label: Color
+  default: "#50E3C2"
