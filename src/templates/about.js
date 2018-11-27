@@ -7,21 +7,22 @@ import Layout from '../components/layout'
 
 class AboutTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const about = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const siteDescription = post.excerpt
     // const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} pageTitle={post.frontmatter.title}>
+      <Layout location={this.props.location} pageTitle={about.frontmatter.title}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+          title={`${about.frontmatter.title} | ${siteTitle}`}
         />
 
         <h1>TEST</h1>
-        {post.frontmatter.color}
+        
+        <div
+          style={{ width: "100px", height: "100px", background: about.frontmatter.color }}
+        />
       </Layout>
     )
   }
@@ -43,6 +44,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         color
+        libraries
+        social {
+          name
+          link
+        }
       }
     }
   }

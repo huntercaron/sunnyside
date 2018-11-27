@@ -20,10 +20,19 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
+
+        <div 
+          dangerouslySetInnerHTML={{ __html: post.frontmatter.description }} 
+          style={{fontSize: "2rem", margin: "0 3rem", maxWidth: "700px"}}
+        />
       
-        {post.frontmatter.gallery_images.map(image =>
-          <Img fixed={image.childImageSharp.fixed}/>
-        )}
+        <div style={{ display: "flex", justifyContent: "space-around", marginTop: "4rem", flexWrap: "wrap"}}>
+          {post.frontmatter.gallery_images.map(image =>
+            <Img fixed={image.childImageSharp.fixed} style={{margin: "2rem"}}/>
+          )}
+        </div>
+
+ 
         
       </Layout>
     )
@@ -45,6 +54,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        description
         gallery_images {
           childImageSharp {
             fixed(width: 100) {

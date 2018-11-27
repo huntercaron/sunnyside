@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import PageLink from '../components/pageLink'
 
@@ -11,9 +11,7 @@ const SectionTitle = ({ title }) => (
 
 const IndexPage = ({ data: { projects: { edges: projects }, blog: { edges: posts }}}) => (
   <Layout>
-    <h1>Welcome to your new Gatsby site.</h1>
-    <h1>Using Forestry as a headless CMS.</h1>
-    
+    <h1 style={{marginLeft: "3rem"}}>A Gatsby boilerplate using Forestry as a headless CMS.</h1>
     
     <SectionTitle title="Projects"/>
     {projects.map(({ node: project }) => 
@@ -24,6 +22,10 @@ const IndexPage = ({ data: { projects: { edges: projects }, blog: { edges: posts
     {posts.map(({ node: post }) => 
       <PageLink key={post.id} link={post.fields.slug} title={post.frontmatter.title}/>
     )}
+
+    <Link to="/about">
+      <SectionTitle title="About &rarr;"/>
+    </Link>
 
   </Layout>
 )

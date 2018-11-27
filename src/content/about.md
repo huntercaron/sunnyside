@@ -3,7 +3,6 @@ title: about
 template: about
 date: 2018-11-18 08:30:39 +0000
 libraries:
-- eggs
 - GraphQL
 - Gatsby
 - React
@@ -12,6 +11,8 @@ social:
   link: https://www.instagram.com/hunterhcaron/
 - name: Twitter
   link: https://twitter.com/huntercaron
+- name: Website
+  link: http://huntercaron.com
 color: "#70FFE4"
 
 ---
