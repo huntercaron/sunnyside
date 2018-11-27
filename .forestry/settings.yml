@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: src/content/about.md
-  label: About
-  match: "**/*"
 - type: directory
   path: src/content/posts
   label: Posts
@@ -17,6 +13,10 @@ sections:
   path: src/content/projects
   label: Projects
   create: all
+  match: "**/*"
+- type: document
+  path: src/content/about.md
+  label: About
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
