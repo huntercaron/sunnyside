@@ -12,7 +12,7 @@ fields:
   label: Template
   type: text
   hidden: false
-  default: ''
+  default: about
 - name: date
   label: Date
   type: datetime
