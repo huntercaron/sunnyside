@@ -11,7 +11,7 @@ fields:
 - name: template
   label: Template
   type: text
-  hidden: false
+  hidden: true
   default: about
 - name: date
   label: Date
