@@ -43,13 +43,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'boiled',
-        short_name: 'boiled',
+        name: 'sunnyside',
+        short_name: 'sunnyside',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#000000',
         display: 'minimal-ui',
-        icon: 'static/assets/media/other-sloth.jpg', // This path is relative to the root of the site.
+        icon: 'static/assets/media/sunnyside.jpeg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
