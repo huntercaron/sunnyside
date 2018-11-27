@@ -1,0 +1,51 @@
+---
+label: About
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: template
+  label: Template
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: libraries
+  label: Libraries
+  type: list
+  hidden: false
+  default: ''
+- name: social
+  label: Social
+  type: field_group_list
+  fields:
+  - name: name
+    label: Name
+    type: text
+    hidden: false
+    default: ''
+  - name: link
+    label: Link
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: color
+  label: Color
+  type: text
+  hidden: false
+  default: ''
