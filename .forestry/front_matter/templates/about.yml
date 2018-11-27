@@ -44,8 +44,9 @@ fields:
     default: ''
   hidden: false
   default: ''
-- name: color
+- type: color
+  name: color
+  config:
+    color_format: Hex
+    required: true
   label: Color
-  type: text
-  hidden: false
-  default: ''
