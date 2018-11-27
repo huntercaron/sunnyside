@@ -51,3 +51,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- src/content/about.md

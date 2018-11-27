@@ -1,7 +1,7 @@
 ---
 title: About
 template: about
-date: 2018-11-18 08:30:39 +0000
+date: 2018-11-18T08:30:39+00:00
 description: This is an about page with various field types.
 libraries:
 - GraphQL
