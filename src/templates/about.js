@@ -1,14 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import get from 'lodash/get'
 
 import Layout from '../components/layout'
 
 class AboutTemplate extends React.Component {
   render() {
     const about = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location} pageTitle={about.frontmatter.title}>
