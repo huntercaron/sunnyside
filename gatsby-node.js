@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        // Create blog posts pages.
+        // Create all dynamic pages
         const posts = result.data.allMarkdownRemark.edges;
 
         _.each(posts, (post, index) => {
