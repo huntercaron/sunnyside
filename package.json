@@ -1,12 +1,12 @@
 {
   "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "description": "Sunnyside",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Hunter Caron",
   "dependencies": {
     "gatsby": "^2.0.40",
     "gatsby-image": "^2.0.20",
-    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-pluqgin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.12",
@@ -35,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/huntercaron/sunnyside/"
   }
 }
