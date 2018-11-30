@@ -1,5 +1,5 @@
 # Sunnyside
-A minimal & opinionated Gatsby boilerplate.
+A minimal & somewhat opinionated Gatsby boilerplate.
 
 Basic setup of [Gatsby](https://www.gatsbyjs.org/) with [Forestry](https://forestry.io/).
 
