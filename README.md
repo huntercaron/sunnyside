@@ -40,6 +40,7 @@ In order to have that wonderful gatsby-img loading, this starter is using the `g
 ## Docs & Guides
 - For other Gatsby commands look [here](https://www.gatsbyjs.org/docs/).
 - I also strongly recommended the Gatsby tutorial [here](https://www.gatsbyjs.org/tutorial/).
+- For Forestry stuff, check out their docs [here](https://forestry.io/docs/welcome/).
 - If using Netlify to host your site, simply commit to your site and it will rebuild.
 - If using Github pages, follow the guide [here](https://www.gatsbyjs.org/docs/deploy-gatsby/#github-pages).
 
