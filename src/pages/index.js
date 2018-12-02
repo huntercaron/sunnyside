@@ -13,7 +13,8 @@ const SectionTitle = ({ title }) => (
 const IndexPage = ({ data: { projects: { edges: projects }, blog: { edges: posts }}}) => (
   <Layout>
     <h1 style={{maxWidth: "500px"}}>A <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a> boilerplate using <a href="https://forestry.io/" target="_blank" rel="noopener noreferrer">Forestry</a> as a headless CMS.</h1>
-    
+    <h1 style={{maxWidth: "500px"}}>Find it on <a href="https://github.com/huntercaron/sunnyside" target="_blank" rel="noopener noreferrer">github</a>.</h1>
+
     <SectionTitle title="Projects"/>
     {projects.map(({ node: project }) => 
       <PageLink key={project.id} link={project.fields.slug} title={project.frontmatter.title}/>
