@@ -29,8 +29,12 @@ export default function ProjectTemplate(props) {
           flexWrap: 'wrap',
         }}
       >
-        {project.frontmatter.gallery_images.map((image) => (
-          <Img fixed={image.childImageSharp.fixed} style={{ margin: '2rem' }} />
+        {project.frontmatter.gallery_images.map((image, i) => (
+          <Img
+            key={i}
+            fixed={image.childImageSharp.fixed}
+            style={{ margin: '2rem' }}
+          />
         ))}
       </div>
     </Layout>
@@ -47,7 +51,6 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt
-      html
       frontmatter {
         title
         description
