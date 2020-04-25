@@ -16,9 +16,7 @@ const ProjectTemplate = props => {
         </title>
       </Helmet>
 
-      <div
-        dangerouslySetInnerHTML={{ __html: project.frontmatter.description }}
-      />
+      <p>{project.frontmatter.description}</p>
 
       <div
         style={{

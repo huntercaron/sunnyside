@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import 'ress/dist/ress.min.css'
-import './layout.css'
-import Header from './header'
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
+import "ress/dist/ress.min.css"
+import "./layout.css"
+import Header from "./header"
 
 const Layout = ({ children, pageTitle }) => {
   const data = useStaticQuery(graphql`
@@ -16,6 +16,7 @@ const Layout = ({ children, pageTitle }) => {
       }
     }
   `)
+
   return (
     <>
       <Helmet>

@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 const PageLink = ({ link, title }) => (
   <div
     style={{
-      fontSize: "36px",
       marginLeft: "3rem",
       lineHeight: 1.2,
       letterSpacing: "-.05rem",
@@ -16,7 +15,7 @@ const PageLink = ({ link, title }) => (
 )
 
 const SectionTitle = ({ title }) => (
-  <h2 style={{ fontSize: "36px", marginTop: "4rem" }}>{title}</h2>
+  <h2 style={{ marginTop: "4rem" }}>{title}</h2>
 )
 
 const LinkOut = ({ href, text }) => (

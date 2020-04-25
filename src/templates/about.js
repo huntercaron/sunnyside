@@ -15,24 +15,30 @@ const AboutTemplate = props => {
         </title>
       </Helmet>
 
-      <div style={{ margin: "0 3rem", fontSize: "2rem", maxWidth: "700px" }}>
+      <div style={{ margin: "0 3rem", maxWidth: "700px" }}>
         <p>{about.frontmatter.description}</p>
 
-        <h4>A list field: Social</h4>
-        <ul>
-          {about.frontmatter.social.map(link => (
-            <li>
-              <a href={link.link}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
+        <br />
 
-        <h4>Another list field: Libraries</h4>
+        <h4>A list field</h4>
         <ul>
           {about.frontmatter.libraries.map((lib, i) => (
             <li key={i}>{lib}</li>
           ))}
         </ul>
+
+        <br />
+
+        <h4>An object list field</h4>
+        <ul>
+          {about.frontmatter.social.map((link, i) => (
+            <li key={i}>
+              <a href={link.link}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
+
+        <br />
 
         <h4>Color Field</h4>
         <div

@@ -2,6 +2,9 @@
 *:before,
 *:after {
   -webkit-overflow-scrolling: touch;
+
+  /* remove this to restore nomral sizes */
+  font-size: 32px;
 }
 
 html {
@@ -13,7 +16,6 @@ body {
   margin: 0;
   height: 100% !important;
   overflow-x: hidden;
-  font-size: 1.6em;
   line-height: 1.6;
   font-weight: 400;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -39,13 +41,13 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: -.1rem;
+  letter-spacing: -.033em;
 }
 
 p {
