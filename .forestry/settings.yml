@@ -26,6 +26,6 @@ build:
   preview_output_directory: public
   install_dependencies_command: yarn install
   preview_docker_image: forestryio/node:10
-  mount_path: "/"
-  working_dir: "/"
+  mount_path: "/srv"
+  working_dir: "/srv"
   instant_preview_command: gatsby develop -H 0.0.0.0 -p 8080
