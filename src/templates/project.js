@@ -1,8 +1,8 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import Layout from '../components/layout'
+import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import Layout from "../components/layout"
 
 export default function ProjectTemplate(props) {
   const project = props.data.markdownRemark
@@ -18,22 +18,21 @@ export default function ProjectTemplate(props) {
 
       <div
         dangerouslySetInnerHTML={{ __html: project.frontmatter.description }}
-        style={{ fontSize: '2rem', margin: '0 3rem', maxWidth: '700px' }}
       />
 
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          marginTop: '4rem',
-          flexWrap: 'wrap',
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "4rem",
+          flexWrap: "wrap",
         }}
       >
         {project.frontmatter.gallery_images.map((image, i) => (
           <Img
             key={i}
             fixed={image.childImageSharp.fixed}
-            style={{ margin: '2rem' }}
+            style={{ margin: "2rem" }}
           />
         ))}
       </div>

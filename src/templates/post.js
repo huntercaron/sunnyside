@@ -1,8 +1,8 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { graphql } from 'gatsby'
+import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
+import Layout from "../components/layout"
 
 export default function BlogPostTemplate(props) {
   const post = props.data.markdownRemark
@@ -16,10 +16,7 @@ export default function BlogPostTemplate(props) {
         </title>
       </Helmet>
 
-      <div
-        dangerouslySetInnerHTML={{ __html: post.html }}
-        style={{ fontSize: '2rem', margin: '0 3rem', maxWidth: '700px' }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   )
 }

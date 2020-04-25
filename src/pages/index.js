@@ -1,11 +1,29 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
+import React from "react"
+import { graphql, Link } from "gatsby"
+import Layout from "../components/layout"
 
-import Layout from '../components/layout'
-import PageLink from '../components/pageLink'
+const PageLink = ({ link, title }) => (
+  <div
+    style={{
+      fontSize: "36px",
+      marginLeft: "3rem",
+      lineHeight: 1.2,
+      letterSpacing: "-.05rem",
+    }}
+  >
+    <Link to={link}>{title} &rarr;</Link>
+  </div>
+)
 
 const SectionTitle = ({ title }) => (
-  <h2 style={{ fontSize: '36px', marginTop: '4rem' }}>{title}</h2>
+  <h2 style={{ fontSize: "36px", marginTop: "4rem" }}>{title}</h2>
+)
+
+const LinkOut = ({ href, text }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    {" "}
+    {text}{" "}
+  </a>
 )
 
 const IndexPage = ({
@@ -15,31 +33,15 @@ const IndexPage = ({
   },
 }) => (
   <Layout>
-    <h1 style={{ maxWidth: '450px' }}>
-      A{' '}
-      <a
-        href="https://www.gatsbyjs.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gatsby
-      </a>{' '}
-      boilerplate using{' '}
-      <a href="https://forestry.io/" target="_blank" rel="noopener noreferrer">
-        Forestry
-      </a>{' '}
+    <h1 style={{ maxWidth: "450px" }}>
+      A <LinkOut href="https://www.gatsbyjs.org/" text="Gatsby" />
+      boilerplate using <LinkOut href="https://forestry.io/" text="Forestry" />
       as a CMS.
     </h1>
-    <h1 style={{ maxWidth: '500px' }}>
-      Find it on{' '}
-      <a
-        href="https://github.com/huntercaron/sunnyside"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        github
-      </a>
-      .
+
+    <h1 style={{ maxWidth: "500px" }}>
+      Find it on
+      <LinkOut href="https://github.com/huntercaron/sunnyside" text="Github" />
     </h1>
 
     <SectionTitle title="Projects" />
