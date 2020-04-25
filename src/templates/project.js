@@ -4,12 +4,12 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 
-export default function ProjectTemplate(props) {
+const ProjectTemplate = props => {
   const project = props.data.markdownRemark
   const siteTitle = props.data.site.siteMetadata.title
 
   return (
-    <Layout location={props.location} pageTitle={project.frontmatter.title}>
+    <Layout pageTitle={project.frontmatter.title}>
       <Helmet>
         <title>
           {project.frontmatter.title} | {siteTitle}
@@ -39,6 +39,8 @@ export default function ProjectTemplate(props) {
     </Layout>
   )
 }
+
+export default ProjectTemplate
 
 export const pageQuery = graphql`
   query ProjectBySlug($slug: String!) {

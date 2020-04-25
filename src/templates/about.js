@@ -1,27 +1,26 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { graphql } from 'gatsby'
+import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
-import Layout from '../components/layout'
-
-export default function AboutTemplate(props) {
+const AboutTemplate = props => {
   const about = props.data.markdownRemark
   const siteTitle = props.data.site.siteMetadata.title
 
   return (
-    <Layout location={props.location} pageTitle={about.frontmatter.title}>
+    <Layout pageTitle={about.frontmatter.title}>
       <Helmet>
         <title>
           {about.frontmatter.title} | {siteTitle}
         </title>
       </Helmet>
 
-      <div style={{ margin: '0 3rem', fontSize: '2rem', maxWidth: '700px' }}>
+      <div style={{ margin: "0 3rem", fontSize: "2rem", maxWidth: "700px" }}>
         <p>{about.frontmatter.description}</p>
 
         <h4>A list field: Social</h4>
         <ul>
-          {about.frontmatter.social.map((link) => (
+          {about.frontmatter.social.map(link => (
             <li>
               <a href={link.link}>{link.name}</a>
             </li>
@@ -38,8 +37,8 @@ export default function AboutTemplate(props) {
         <h4>Color Field</h4>
         <div
           style={{
-            width: '100px',
-            height: '100px',
+            width: "100px",
+            height: "100px",
             background: about.frontmatter.color,
           }}
         />
@@ -47,6 +46,8 @@ export default function AboutTemplate(props) {
     </Layout>
   )
 }
+
+export default AboutTemplate
 
 export const pageQuery = graphql`
   query AboutPage($slug: String!) {
