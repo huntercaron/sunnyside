@@ -8,4 +8,4 @@ Hello! this is a blog post. I'm writing this in Forestry.
 
 Here is a sloth
 
-![](/media/other-sloth.jpg)
+![](/assets/other-sloth.jpg)
