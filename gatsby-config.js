@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/static/assets`,
+        path: `${__dirname}/static/assets/media`,
       },
     },
     {
@@ -25,21 +25,27 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: "assets"
-            }
+              name: 'assets',
+            },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
             },
           },
         ],
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaultQuality: 75,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
