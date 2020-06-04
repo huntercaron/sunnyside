@@ -10,6 +10,6 @@ Here is a sloth
 
 ![](/assets/other-sloth.jpg)
 
-testing some more, I think this ui is a bit better
+testing some more, I think this ui is a bit betterrrrr
 
 ![](/assets/images-1-test-me.jpeg)
