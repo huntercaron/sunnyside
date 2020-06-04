@@ -18,6 +18,7 @@ module.exports = {
         name: "content",
       },
     },
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -38,7 +39,7 @@ module.exports = {
         ],
       },
     },
-    "gatsby-transformer-sharp",
+
     {
       resolve: "gatsby-plugin-sharp",
       options: {

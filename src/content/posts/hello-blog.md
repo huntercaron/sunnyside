@@ -8,9 +8,11 @@ Hello! this is a blog post. I'm writing this in Forestry.
 
 Here is a sloth
 
-![](/assets/other-sloth.jpg)
+![](../../../static/uploads/other-sloth.jpg)
+
+![](/other-sloth.jpg)
 
 testing some more, I think this ui is a bit better
 
   
-![](/assets/media/images (3).jpeg)
+![](/assets/images (3).jpeg)
