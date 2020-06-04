@@ -2,26 +2,28 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
+webhook_url: 
 sections:
-  - type: directory
-    path: src/content/posts
-    label: Posts
-    match: "**/*"
-    templates:
-      - post
-  - type: directory
-    path: src/content/projects
-    label: Projects
-    match: "**/*"
-    templates:
-      - projcet
-  - type: document
-    path: src/content/about.md
-    label: About
+- type: directory
+  path: src/content/posts
+  label: Posts
+  create: documents
+  match: "**/*"
+  templates:
+  - hello-blog
+- type: directory
+  path: src/content/projects
+  label: Projects
+  create: documents
+  match: "**/*"
+  templates:
+  - forests
+- type: document
+  path: src/content/about.md
+  label: About
 upload_dir: static/assets
 public_path: "/assets"
-front_matter_path: ""
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
