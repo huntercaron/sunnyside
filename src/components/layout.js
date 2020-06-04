@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -16,24 +16,6 @@ const Layout = ({ children, pageTitle }) => {
       }
     }
   `)
-
-  useEffect(() => {
-    const unloadBlocker = e => {
-      if (window.location.href.includes("instant.forestry.io")) {
-        // Cancel the event
-        e.preventDefault() // If you prevent default behavior in Mozilla Firefox prompt will always be shown
-        // Chrome requires returnValue to be set
-        // e.returnValue = ""
-        return
-      }
-    }
-
-    window.addEventListener("beforeunload", unloadBlocker)
-
-    return () => {
-      window.removeEventListener("beforeunload", unloadBlocker)
-    }
-  }, [])
 
   return (
     <>
