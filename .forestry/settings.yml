@@ -28,4 +28,4 @@ build:
   preview_docker_image: forestryio/node:10
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: yarn develop -H 0.0.0.0 -p 8080
+  instant_preview_command: yarn develop-hosted

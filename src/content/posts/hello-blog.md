@@ -12,8 +12,4 @@ Here is a sloth
 
 testing some more, I think this ui is a bit better
 
-test
-
-test 2
-
 ![](/assets/images-1-test-me.jpeg)
