@@ -27,7 +27,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "GATSBY_HOT_LOADER=fast-refresh gatsby develop",
-    "develop-hosted": "gatsby develop -H 0.0.0.0 -p 8080",
+    "develop-hosted": "GATSBY_HOT_LOADER=fast-refresh gatsby develop -H 0.0.0.0 -p 8080",
     "format": "prettier --write \"src/**/*.js\"",
     "clean": "rm -rf public .cache",
     "test": "echo \"Error: no test specified\" && exit 1"
