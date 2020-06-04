@@ -9,12 +9,12 @@
 
 html {
   font-size: 90%;
-  height: 100% !important;
+  height: 100%;
 }
 
 body {
   margin: 0;
-  height: 100% !important;
+  height: 100%;
   overflow-x: hidden;
   line-height: 1.6;
   font-weight: 400;
@@ -26,8 +26,6 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   
   -moz-font-feature-settings:"kern" 1; 
   -ms-font-feature-settings:"kern" 1; 
