@@ -9,7 +9,3 @@ Hello! this is a blog post. I'm writing this in Forestry.
 Here is a slothhhh
 
 ![](/assets/other-sloth.jpg)
-
-testing some more, I think this ui is a bit betterrrrr
-
-![](/assets/images-1-test-me.jpeg)
