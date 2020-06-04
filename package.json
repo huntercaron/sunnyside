@@ -27,10 +27,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "GATSBY_HOT_LOADER=fast-refresh gatsby develop",
-    "develop-hosted": "GATSBY_HOT_LOADER=fast-refresh gatsby develop -H 0.0.0.0 -p 8080",
+    "develop-hosted": "GATSBY_HOT_LOADER=fast-refresh gatsby develop -p 8080 -H 0.0.0.0",
     "format": "prettier --write \"src/**/*.js\"",
     "clean": "rm -rf public .cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "devDependencies": {
     "prettier": "^2.0.5"
