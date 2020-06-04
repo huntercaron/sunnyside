@@ -2,20 +2,19 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
+const SectionTitle = ({ title }) => (
+  <h2 style={{ marginTop: "4rem" }}>{title}</h2>
+)
+
 const PageLink = ({ link, title }) => (
   <div
     style={{
       marginLeft: "3rem",
       lineHeight: 1.2,
-      letterSpacing: "-.05rem",
     }}
   >
     <Link to={link}>{title} &rarr;</Link>
   </div>
-)
-
-const SectionTitle = ({ title }) => (
-  <h2 style={{ marginTop: "4rem" }}>{title}</h2>
 )
 
 const LinkOut = ({ href, text }) => (
@@ -30,7 +29,7 @@ const IndexPage = props => {
     data: {
       projects: { edges: projects },
       blog: { edges: posts },
-    },
+    }
   } = props
 
   return (
