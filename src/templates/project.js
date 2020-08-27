@@ -1,38 +1,41 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Layout from "../components/layout"
 
-import Layout from '../components/layout'
+const ProjectTemplate = props => {
+  const project = props.data.markdownRemark
+  const siteTitle = props.data.site.siteMetadata.title
 
-class ProjectTemplate extends React.Component {
-  render() {
-    const project = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const siteDescription = project.excerpt
+  return (
+    <Layout pageTitle={project.frontmatter.title}>
+      <Helmet>
+        <title>
+          {project.frontmatter.title} | {siteTitle}
+        </title>
+      </Helmet>
 
-    return (
-      <Layout location={this.props.location} pageTitle={project.frontmatter.title}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${project.frontmatter.title} | ${siteTitle}`}
-        />
+      <p>{project.frontmatter.description}</p>
 
-        <div 
-          dangerouslySetInnerHTML={{ __html: project.frontmatter.description }} 
-          style={{fontSize: "2rem", margin: "0 3rem", maxWidth: "700px"}}
-        />
-      
-        <div style={{ display: "flex", justifyContent: "space-around", marginTop: "4rem", flexWrap: "wrap"}}>
-          {project.frontmatter.gallery_images.map(image =>
-            <Img fixed={image.childImageSharp.fixed} style={{margin: "2rem"}}/>
-          )}
-        </div>
-
-      </Layout>
-    )
-  }
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "4rem",
+          flexWrap: "wrap",
+        }}
+      >
+        {project.frontmatter.gallery_images.map((image, i) => (
+          <Img
+            key={i}
+            fixed={image.childImageSharp.fixed}
+            style={{ margin: "2rem" }}
+          />
+        ))}
+      </div>
+    </Layout>
+  )
 }
 
 export default ProjectTemplate
@@ -47,7 +50,6 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt
-      html
       frontmatter {
         title
         description

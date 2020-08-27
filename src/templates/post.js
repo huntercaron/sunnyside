@@ -1,30 +1,23 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
-import Layout from '../components/layout'
+const BlogPostTemplate = props => {
+  const post = props.data.markdownRemark
+  const siteTitle = props.data.site.siteMetadata.title
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const siteDescription = post.excerpt
+  return (
+    <Layout pageTitle={post.frontmatter.title}>
+      <Helmet>
+        <title>
+          {post.frontmatter.title} | {siteTitle}
+        </title>
+      </Helmet>
 
-    return (
-      <Layout location={this.props.location} pageTitle={post.frontmatter.title}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
-        <div 
-          dangerouslySetInnerHTML={{ __html: post.html }} 
-          style={{fontSize: "2rem", margin: "0 3rem", maxWidth: "700px"}}
-        />
-        
-      </Layout>
-    )
-  }
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate

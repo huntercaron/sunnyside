@@ -1,11 +1,12 @@
 ---
 title: Hello Blog
 template: post
-date: 2018-11-18T00:07:24+00:00
+date: 2018-11-18T00:07:24.000+00:00
 
 ---
-Hello! this is a blog post. I'm writing this in Forestry and the type is nice. Great work Forestry team. blah blah blah test test test.
+Hello! this is a blog post. I'm writing this in Forestry.
 
-Here is a sloth
+this is new text
 
-![](/media/other-sloth.jpg)
+  
+![](/assets/other-sloth.jpg)

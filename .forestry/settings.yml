@@ -1,28 +1,35 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ''
+admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
   path: src/content/posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - hello-blog
 - type: directory
   path: src/content/projects
   label: Projects
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - forests
 - type: document
   path: src/content/about.md
   label: About
-upload_dir: static/assets/media
-public_path: "/media"
+upload_dir: static/assets
+public_path: "/assets"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_command: gatsby build
-  publish_command: gatsby build
-  output_directory: public
+  preview_output_directory: public
+  install_dependencies_command: yarn install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: yarn run develop-hosted
