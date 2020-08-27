@@ -28,7 +28,7 @@
     "build": "gatsby build",
     "develop": "GATSBY_HOT_LOADER=fast-refresh gatsby develop",
     "develop-hosted": "GATSBY_HOT_LOADER=fast-refresh gatsby develop -p 8080 -H 0.0.0.0",
-    "format": "prettier --write \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\" \"*.js\"",
     "clean": "rm -rf public .cache",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
